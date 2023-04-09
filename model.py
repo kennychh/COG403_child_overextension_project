@@ -4,7 +4,7 @@ import numpy as np
 import torch
 
 # NOTE: following inputs and outputs are PyTorch, not NumPy.
-
+# NOTE: analyses of removal of freq prior and KERNEL_EXP change were done seperately.
 def compute_likelihood(prod_sense_dist, kernel_widths):
     p, s, d = prod_sense_dist.shape
     assert(
